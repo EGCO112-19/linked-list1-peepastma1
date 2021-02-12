@@ -14,10 +14,11 @@ while(*argv){
       {
         score=atoi(*(argv+1));
         printf("Inserting %d:%d\n",id,score);
-        head=insert(head,id,score);  // แทร
+        head=insert(head,id,score);
        }
   argv+=2;
 }
+  printf("test\n\n");
   printlist(head);
   Find_avg(head);
   freeLnode(head);
