@@ -18,7 +18,7 @@ while(*argv){
        }
   argv+=2;
 }
-  printf("test\n\n");
+  printf("\n\n");
   printlist(head);
   Find_avg(head);
   freeLnode(head);
