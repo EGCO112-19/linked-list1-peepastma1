@@ -48,22 +48,22 @@ void printlist(Lnode* head)
   {
     printf("STUDENT %d ID : %d SCORE : %d\n",student,now->id,now->score);
     now=now->next;
+    student++;
   }
 }
-void Find_avg(Lnode*)
+
+void Find_avg(Lnode *head)
 {
-  float sum=0,avg;
-  int count=0;
-  Lnode *now;
-  now=head;
+  float sum = 0;
+  int count = 0;
+  Lnode *now = head;
   while(now!=NULL)
   {
-    sum += (now->score);
+    sum += (now-> score);
     count++;
-    now=now->next;
+    now = now -> next;
   }
-  avg=sum/count;
-  printf("The Class Average Score is &.2f\n",avg);
+  printf("\nClass Average Score : %.2f\n",sum/count);
 }
 
 void freeLnode(Lnode *head)
