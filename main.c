@@ -9,16 +9,16 @@ Lnode *head=NULL;
 int i,id,score;
 argv++;
 while(*argv){
-   id=atoi(*argv);
-   if(id!=0 && *(argv+1))
+  id=atoi(*argv);
+  if(id!=0 && *(argv+1))
       {
-      score=atoi(*(argv+1));
-    printf("Inserting %d:%d\n",id,score);
-    head=insert(head,id,score);  // แทร
-    argv+=2;
-   }
+        score=atoi(*(argv+1));
+        printf("Inserting %d:%d\n",id,score);
+        head=insert(head,id,score);  // แทร
+       }
+  argv+=2;
 }
-   printlist(head);
-   Find_avg(head);
-   return 0;
+  printlist(head);
+  Find_avg(head);
+  return 0;
 }
