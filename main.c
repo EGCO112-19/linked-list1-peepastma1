@@ -21,6 +21,6 @@ while(*argv){
   printlist(head);
   Find_avg(head);
   freeLnode(head);
-  printf("\n--------------END--------------");
+  printf("\n--------------END--------------\n");
   return 0;
 }
