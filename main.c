@@ -15,8 +15,11 @@ while(*argv){
         score=atoi(*(argv+1));
         printf("Inserting %d:%d\n",id,score);
         head=insert(head,id,score);
-       }
-  argv+=2;
+        argv+=2;
+      }
+  else{
+       break;
+      }
 }
   printf("\n\n");
   printlist(head);
